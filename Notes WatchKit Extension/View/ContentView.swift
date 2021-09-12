@@ -102,7 +102,7 @@ struct ContentView: View {
                 }
             } else {
                 Spacer()
-                Image(systemName: "notes.text")
+                Image(systemName: "note.text")
                     .resizable()
                     .scaledToFit()
                     .foregroundColor(.gray)
