@@ -12,19 +12,13 @@ struct DetailView: View {
     let note: Note
     let count: Int
     let index: Int
+    @State private var isCreditsPresented: Bool = false
     
     //MARK:- Body
     var body: some View {
         VStack(alignment: .center, spacing: 3, content: {
             // Header
-            HStack {
-                Capsule()
-                    .frame(height: 1)
-                Image(systemName: "note.text")
-                Capsule()
-                    .frame(height: 1)
-            } //: HStack
-            .foregroundColor(.accentColor)
+            HeaderView()
             
             // Content
             Spacer()
@@ -42,6 +36,12 @@ struct DetailView: View {
             HStack(alignment: .center, content: {
                 Image(systemName: "gear")
                     .imageScale(.large)
+                    .onTapGesture {
+                        isCreditsPresented.toggle()
+                    }
+                    .sheet(isPresented: $isCreditsPresented, content: {
+                        CreditsView()
+                    })
                 Spacer()
                 Text("\(count) / \(index+1)")
                 Spacer()

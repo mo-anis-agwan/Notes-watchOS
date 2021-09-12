@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		88093DD726EDFB5600558A2D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88093DD626EDFB5600558A2D /* DetailView.swift */; };
+		88093DD926EDFEEF00558A2D /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88093DD826EDFEEF00558A2D /* CreditsView.swift */; };
+		88093DDC26EDFF6400558A2D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88093DDB26EDFF6400558A2D /* HeaderView.swift */; };
 		88D1B54626DE990000DA02C5 /* Notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 88D1B54526DE990000DA02C5 /* Notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		88D1B54B26DE990400DA02C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D1B54A26DE990400DA02C5 /* Assets.xcassets */; };
 		88D1B55226DE990400DA02C5 /* Notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 88D1B55126DE990400DA02C5 /* Notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -63,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		88093DD626EDFB5600558A2D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		88093DD826EDFEEF00558A2D /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		88093DDB26EDFF6400558A2D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		88D1B54126DE98FF00DA02C5 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D1B54526DE990000DA02C5 /* Notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D1B54A26DE990400DA02C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88093DDA26EDFF5500558A2D /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				88093DDB26EDFF6400558A2D /* HeaderView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		88D1B53A26DE98FF00DA02C5 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +131,7 @@
 		88D1B55526DE990400DA02C5 /* Notes WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				88093DDA26EDFF5500558A2D /* Component */,
 				88F0964C26DEC33E00C0DA8E /* Model */,
 				88F0964B26DEC32E00C0DA8E /* View */,
 				88D1B55826DE990400DA02C5 /* NotesApp.swift */,
@@ -143,6 +156,7 @@
 			children = (
 				88D1B55626DE990400DA02C5 /* ContentView.swift */,
 				88093DD626EDFB5600558A2D /* DetailView.swift */,
+				88093DD826EDFEEF00558A2D /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,8 +298,10 @@
 				88D1B55726DE990400DA02C5 /* ContentView.swift in Sources */,
 				88D1B55926DE990400DA02C5 /* NotesApp.swift in Sources */,
 				88D1B55B26DE990400DA02C5 /* ComplicationController.swift in Sources */,
+				88093DD926EDFEEF00558A2D /* CreditsView.swift in Sources */,
 				88093DD726EDFB5600558A2D /* DetailView.swift in Sources */,
 				88F0964E26DEC35300C0DA8E /* Note.swift in Sources */,
+				88093DDC26EDFF6400558A2D /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
